@@ -3,10 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jogo de Adivinhação</title>
+    <title>Quiz Bíblico</title>
+
+    <style>
+        *{
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body {
+            background-image: linear-gradient(to right,  rgb(81, 81, 204), rgb(151, 7, 218));
+        }
+        #corpo_principal_do_quiz {
+            background-color: white;
+            width: 100vw;
+            height: 95vh;
+            margin: auto;
+            text-align: center;
+        }
+
+        .templates_das_perguntas {
+            background-color: white;
+            width: 100vw;
+            height: 95vh;
+            margin: auto;
+            text-align: center;
+        }
+        .perguntas_dos_templates {
+            margin: 0px;
+        }
+        .intro {
+            margin-top: 30px;
+            margin-left: 5px;
+            margin-right: 5px;
+            width: 300px;
+            height: 200px;
+        }
+        p {
+            margin-top: 10px;
+        }
+        #btn {
+            margin-top: 10px;
+            text-transform: uppercase;
+            background-image: linear-gradient(to right,  rgb(81, 81, 204), rgb(151, 7, 218));
+            color: white;
+            font-weight: bold;
+            border-radius: 8px;
+        }
+        #rodape {
+            text-align: center;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-    <h1>Jogo de Adivinhação</h1>
-    Em andamento
+    <main id="corpo_principal_do_quiz">
+        <h1 id="titulo_principal">Quiz Bíblico</h1>
+
+            <section>
+                <p>Sejam bem-vindos ao nosso <span>Quiz Bíblico</span>. Hoje, o desafio é testar o seu conhecimento e memória sobre as Sagradas Escrituras, de Gênesis a Apocalipse.</p>
+            <img src="https://images.pexels.com/photos/29756408/pexels-photo-29756408.png" alt="" class="intro">
+            </section>
+
+            <section>
+                <h2>E aí, tá pronto?</h2>
+                <button id="btn" onclick="iniciarPerguntas()">Bora Lá</button>
+            </section>
+
+    </main>
+
+    <footer>
+        <p id="rodape">Desenvolvido Por Filisberto Campos</p>
+    </footer>
+
+    <script src="adivinhacao.js"></script>
 </body>
 </html>
